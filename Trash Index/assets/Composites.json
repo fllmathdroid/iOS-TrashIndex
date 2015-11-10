@@ -1,0 +1,50 @@
+[
+  {
+    "barcode": "037000858041",
+    "name": "Crest Complete Extra Whitening ToothPaste",
+    "leafs": ["Leaf_CardBoard","Leaf_PlasticContainer","Leaf_Perishable"],
+    "leafFractions": ["0.05", "0,05", "0.9"]
+  },
+  {
+    "barcode": "096619183289",
+    "name" : "Kirkland Whole Cashews",
+    "leafs": ["Leaf_PlasticContainer","Leaf_Paper","Leaf_FruitAndNut"],
+    "leafFractions": ["0.1", "0.01", "0.89"]
+  },
+  {
+    "barcode": "012546001250",
+    "name": "Trident Suger Free Gum",
+    "leafs": ["Leaf_PlasticContainer","Leaf_Paper","Leaf_FruitAndNut"],
+    "leafFractions": ["0.1", "0.01", "0.89"]
+  },
+  {
+    "barcode": "0796435419035",
+    "name": "Optoma Palm-sized Projector",
+    "leafs": ["Leaf_PlasticContainer","Leaf_Paper"],
+    "leafFractions": ["0.5", "0.5"]
+  },
+ {
+  "barcode": "0718103009218",
+  "name": "Staples 1 Subject Notebook, Wide Ruled, Assorted Colors (Pack of 10)",
+  "leafs": ["Leaf_Paper","Leaf_Cardboard"],
+  "leafFractions": ["0.9","0.1"]
+ },
+ {
+  "barcode": "0075720481279",
+  "name": "Poland Spring Water",
+  "leafs": ["Leaf_PlasticBottle","Leaf_Paper"],
+  "leafFractions": ["0.99","0.01"]
+ },
+ {
+ "barcode": "0046716100924",
+ "name": "RJA1025 Alto Sax #2.5",
+ "leafs": ["Leaf_Wood","Leaf_Plastic","Leaf_Cardboard"],
+ "leafFractions": ["0.1","0.8","0.1"]
+ },
+ {
+ "barcode": "0302993917809",
+ "name": "Moisturizing Cream for Dry, Sensitive Skin, Fragence Free, Non-comedonic (20 Oz)",
+ "leafs": ["Leaf_PlasticContainer"],
+ "leafFractions": ["1.0"]
+ }
+]

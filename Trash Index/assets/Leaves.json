@@ -1,0 +1,108 @@
+[
+  {
+    "barcode": "Leaf_Perishable",
+    "name": "Perishable",
+    "months2degrade": "0.1"
+  },
+  {
+    "barcode": "Leaf_FruitAndNut",
+    "name": "FruitAndNut",
+    "months2degrade": "1"
+  },
+  {
+    "barcode": "Leaf_Paper",
+    "name": "Paper",
+    "months2degrade": "1"
+  },
+  {
+    "barcode": "Leaf_CardBoard",
+    "name": "CardBoard",
+    "months2degrade": "2"
+  },
+  {
+    "barcode": "Leaf_Cotton",
+    "name": "Cotton",
+    "months2degrade": "3"
+  },
+  {
+    "barcode": "Leaf_Wood",
+    "name": "Wood",
+    "months2degrade": "36"
+  },
+  {
+    "barcode": "Leaf_Wool",
+    "name": "Wool",
+    "months2degrade": "60"
+  },
+  {
+    "barcode": "Leaf_Rope",
+    "name": "Rope",
+    "months2degrade": "168"
+  },
+  {
+    "barcode": "Leaf_Leather",
+    "name": "Leather",
+    "months2degrade": "480"
+  },
+  {
+    "barcode": "Leaf_TinnedSteelCan",
+    "name": "TinnedSteelCan",
+    "months2degrade": "600"
+  },
+  {
+    "barcode": "Leaf_FoamPlasticCup",
+    "name": "FoamPlasticCup",
+    "months2degrade": "600"
+  },
+  {
+    "barcode": "Leaf_Rubber",
+    "name": "Rubber",
+    "months2degrade": "960"
+  },
+  {
+    "barcode": "Leaf_PlasticContainer",
+    "name": "PlasticContainer",
+    "months2degrade": "960"
+  },
+  {
+    "barcode": "Leaf_PlasticBottle",
+    "name": "PlasticBottle",
+    "months2degrade": "5400"
+  },
+  {
+    "barcode": "Leaf_AluminumCan",
+    "name": "AluminumCan",
+    "months2degrade": "6000"
+  },
+  {
+    "barcode": "Leaf_DisposableDiaper",
+    "name": "DisposableDiaper",
+    "months2degrade": "6600"
+  },
+  {
+    "barcode": "Leaf_Nylon",
+    "name": "Nylon",
+    "months2degrade": "7200"
+  },
+  {
+    "barcode": "Leaf_PlasticBag",
+    "name": "PlasticBag",
+    "months2degrade": "12000"
+  },
+  {
+    "barcode": "Leaf_Glass",
+    "name": "Glass",
+    "months2degrade": "12000000"
+  },
+  {
+    "barcode": "Leaf_Styrofoam",
+    "name": "Styrofoam",
+    "months2degrade": "12000000"
+  },
+ {
+ "barcode": "0071287861783",
+ "name": "up & up? Fresh Scent Antibacterial Moist Wipes 75 ct",
+ "leafs": ["Leaf_PlasticBottle","Leaf_Paper"],
+ "leafFractions": ["0.35","0.65"]
+ }
+]
