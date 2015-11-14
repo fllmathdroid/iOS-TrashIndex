@@ -7,7 +7,7 @@ import Foundation
 
     var category:String
     var name:String
-    var months2degrade:Float
+    var months2degrade:Double
 
     init(value:NSDictionary)
     {
@@ -21,7 +21,7 @@ import Foundation
         }
         self.months2degrade = 10.0
         if let months2degrade = value["months2degrade"]  as? NSString {
-            self.months2degrade = months2degrade.floatValue;
+            self.months2degrade = months2degrade.doubleValue;
         }
         print("Leaf.init \(self.category) : \(self.name) : \(self.months2degrade)");
     }

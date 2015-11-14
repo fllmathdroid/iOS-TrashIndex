@@ -6,7 +6,7 @@ import Foundation
     var barcode=String()
     var name=String()
     var leafs=[String]()
-    var leafFractions = [Float]();
+    var leafFractions = [Double]();
 
     init(value:NSDictionary)
     {
@@ -22,7 +22,7 @@ import Foundation
 
         if let leafFractions:[NSString] = value["leafFractions"]  as? [NSString] {
             for fraction:NSString in leafFractions {
-                self.leafFractions.append(fraction.floatValue);
+                self.leafFractions.append(fraction.doubleValue);
             }
         }
         print("Product.init \(self.barcode) : \(self.name) : \(self.leafs) : \(self.leafFractions)");
@@ -31,11 +31,11 @@ import Foundation
     // function to calculate trashIndex
     func trashIndex() -> UInt
     {
-        var returnVal:Float = 0.0; // init value
+        var returnVal:Double = 0.0; // init value
         for var index = 0; index < self.leafs.count; index++ {
             let category = self.leafs[index];
             if index < self.leafFractions.count  {
-                let fract:Float = self.leafFractions[index];
+                let fract:Double = self.leafFractions[index];
                 if let leaf:Leaf = Leaf.find(category) {
                     print("found leaf for \(leaf.name) months2degrade \(leaf.months2degrade)");
                     returnVal += sqrt(leaf.months2degrade)*5 * fract
