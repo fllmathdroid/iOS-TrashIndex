@@ -25,6 +25,9 @@
 		484FC0A31BE9000700BCAA72 /* UIImage+RoundedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FC0981BE9000700BCAA72 /* UIImage+RoundedImage.m */; settings = {ASSET_TAGS = (); }; };
 		484FC0A41BE9000700BCAA72 /* UIImage+tintImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FC09A1BE9000700BCAA72 /* UIImage+tintImageWithColor.m */; settings = {ASSET_TAGS = (); }; };
 		484FC0A51BE9000700BCAA72 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 484FC09C1BE9000700BCAA72 /* UIImage+Utils.m */; settings = {ASSET_TAGS = (); }; };
+		4859A7E41BF7EFEA005403FA /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859A7E31BF7EFEA005403FA /* BarChartViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4859A7F11BF7F0DC005403FA /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4859A7EC1BF7F099005403FA /* Charts.framework */; };
+		4859A7F21BF7F0DC005403FA /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4859A7EC1BF7F099005403FA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		486BEA861BE7CB7300112C43 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BEA851BE7CB7300112C43 /* ProductViewController.m */; settings = {ASSET_TAGS = (); }; };
 		486CE0C71BE7C00E00DA6B56 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CE0C51BE7C00E00DA6B56 /* ScannerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		48C9E1291BEEC508000AD1BB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E1241BEEC508000AD1BB /* Product.swift */; settings = {ASSET_TAGS = (); }; };
@@ -49,7 +52,49 @@
 			remoteGlobalIDString = 4823A3291BE7BAEB0081ACDD;
 			remoteInfo = "Trash Index";
 		};
+		4859A7EB1BF7F099005403FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4859A7E51BF7F099005403FA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		4859A7ED1BF7F099005403FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4859A7E51BF7F099005403FA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		4859A7EF1BF7F099005403FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4859A7E51BF7F099005403FA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		4859A7F31BF7F0DC005403FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4859A7E51BF7F099005403FA /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4859A7F51BF7F0DC005403FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4859A7F21BF7F0DC005403FA /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F2634BD74CE77B7E006CDAF /* libPods-Trash Index.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Trash Index.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +133,8 @@
 		484FC09A1BE9000700BCAA72 /* UIImage+tintImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+tintImageWithColor.m"; sourceTree = "<group>"; };
 		484FC09B1BE9000700BCAA72 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
 		484FC09C1BE9000700BCAA72 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		4859A7E31BF7EFEA005403FA /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		4859A7E51BF7F099005403FA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		486BEA841BE7CB7300112C43 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
 		486BEA851BE7CB7300112C43 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		486CE0C51BE7C00E00DA6B56 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
@@ -107,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A493C81A78D04A1D86F0570C /* libPods-Trash Index.a in Frameworks */,
+				4859A7F11BF7F0DC005403FA /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +187,7 @@
 		4823A3211BE7BAEB0081ACDD = {
 			isa = PBXGroup;
 			children = (
+				4859A7E51BF7F099005403FA /* Charts.xcodeproj */,
 				4823A32C1BE7BAEB0081ACDD /* Trash Index */,
 				4823A3461BE7BAEB0081ACDD /* Trash IndexTests */,
 				4823A3511BE7BAEB0081ACDD /* Trash IndexUITests */,
@@ -161,6 +210,7 @@
 		4823A32C1BE7BAEB0081ACDD /* Trash Index */ = {
 			isa = PBXGroup;
 			children = (
+				4859A7E31BF7EFEA005403FA /* BarChartViewController.swift */,
 				48C9E1241BEEC508000AD1BB /* Product.swift */,
 				48C9E1251BEEC508000AD1BB /* Leaf.swift */,
 				48C9E1261BEEC508000AD1BB /* assets */,
@@ -235,6 +285,16 @@
 			path = "UIImage-categories";
 			sourceTree = "<group>";
 		};
+		4859A7E61BF7F099005403FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4859A7EC1BF7F099005403FA /* Charts.framework */,
+				4859A7EE1BF7F099005403FA /* Charts.framework */,
+				4859A7F01BF7F099005403FA /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		48C9E1261BEEC508000AD1BB /* assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,10 +324,12 @@
 				4823A3271BE7BAEB0081ACDD /* Frameworks */,
 				4823A3281BE7BAEB0081ACDD /* Resources */,
 				0F781E2B8AF8230B8F2520FE /* Copy Pods Resources */,
+				4859A7F51BF7F0DC005403FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4859A7F41BF7F0DC005403FA /* PBXTargetDependency */,
 			);
 			name = "Trash Index";
 			productName = "Trash Index";
@@ -345,6 +407,12 @@
 			mainGroup = 4823A3211BE7BAEB0081ACDD;
 			productRefGroup = 4823A32B1BE7BAEB0081ACDD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4859A7E61BF7F099005403FA /* Products */;
+					ProjectRef = 4859A7E51BF7F099005403FA /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4823A3291BE7BAEB0081ACDD /* Trash Index */,
@@ -353,6 +421,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4859A7EC1BF7F099005403FA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 4859A7EB1BF7F099005403FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4859A7EE1BF7F099005403FA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 4859A7ED1BF7F099005403FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4859A7F01BF7F099005403FA /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 4859A7EF1BF7F099005403FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4823A3281BE7BAEB0081ACDD /* Resources */ = {
@@ -422,6 +514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4859A7E41BF7EFEA005403FA /* BarChartViewController.swift in Sources */,
 				486BEA861BE7CB7300112C43 /* ProductViewController.m in Sources */,
 				4823A3321BE7BAEB0081ACDD /* AppDelegate.m in Sources */,
 				48C9E1291BEEC508000AD1BB /* Product.swift in Sources */,
@@ -469,6 +562,11 @@
 			isa = PBXTargetDependency;
 			target = 4823A3291BE7BAEB0081ACDD /* Trash Index */;
 			targetProxy = 4823A34F1BE7BAEB0081ACDD /* PBXContainerItemProxy */;
+		};
+		4859A7F41BF7F0DC005403FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 4859A7F31BF7F0DC005403FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,6 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Trash Index/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -598,6 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Trash Index/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

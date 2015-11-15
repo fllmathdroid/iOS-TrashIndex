@@ -121,6 +121,41 @@
             </objects>
             <point key="canvasLocation" x="-188" y="625"/>
         </scene>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="Tag-Ib-Al4">
+            <objects>
+                <viewController storyboardIdentifier="BarChartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e5h-JO-VAP" customClass="BarChartViewController" customModule="Trash_Index" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JjO-wk-9f7"/>
+                        <viewControllerLayoutGuide type="bottom" id="F8t-LJ-HtC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aes-At-KBq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-mb-G7d" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="238" y="219" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="g8B-mb-G7d" secondAttribute="trailing" id="7qJ-q8-oih"/>
+                            <constraint firstItem="g8B-mb-G7d" firstAttribute="leading" secondItem="aes-At-KBq" secondAttribute="leadingMargin" id="JKH-Gj-xZc"/>
+                            <constraint firstItem="g8B-mb-G7d" firstAttribute="top" secondItem="JjO-wk-9f7" secondAttribute="bottom" id="vfT-kb-J8W"/>
+                            <constraint firstItem="F8t-LJ-HtC" firstAttribute="top" secondItem="g8B-mb-G7d" secondAttribute="bottom" id="yth-bj-4Nc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="g8B-mb-G7d" id="2zz-ft-LUZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymY-bu-vAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="1783"/>
+        </scene>
     </scenes>
     <resources>
         <image name="reverse" width="16" height="16"/>

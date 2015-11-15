@@ -8,6 +8,7 @@
     CGFloat statusAndNavigationBarHeight;
 }
 @property (nonatomic, strong) NSString *productTrashIndex;
+@property (nonatomic, strong) Product *product;
 @property (nonatomic, strong) NSString *productName;
 @property (nonatomic, strong) NSMutableArray *productImageList;
 @property (nonatomic, strong) NSMutableArray *productAttributes;
@@ -34,6 +35,8 @@ static float  kTopViewHeight=250.0;
     if (product) {
         self.productTrashIndex = [NSString stringWithFormat:@"Trash Index: %lu", (unsigned long)[product trashIndex]];
     }
+    self.product = product;
+    
     UIImage *image = [UIImage imageNamed:@"ShoppingCart"];
     if (image.size.height > kTopViewImageSize)
         image= [image thumbnailImage:kTopViewImageSize transparentBorder:1 cornerRadius:2
@@ -183,6 +186,10 @@ static float  kTopViewHeight=250.0;
         }
         if (indexPath.row == 1) {
             cell.textLabel.text = self.productTrashIndex;
+            if (self.product)
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            else
+                cell.accessoryType = UITableViewCellAccessoryNone;
         }
         return cell;
     } 
@@ -199,8 +206,22 @@ static float  kTopViewHeight=250.0;
         return cell;
     }
     return nil;
+
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ((indexPath.section == 0) && (indexPath.row == 1)) {
+        if (self.product) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UIViewController *detailViewController = nil;
+            detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"BarChartViewController"];
+            BarChartViewController *bcvc = (BarChartViewController*)detailViewController;
+            bcvc.product = self.product;
+            [self.navigationController pushViewController:detailViewController animated:YES];
+        }
+    } 
+}
 #pragma mark iCarousel methods
 
 - (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel
