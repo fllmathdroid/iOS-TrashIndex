@@ -37,7 +37,7 @@
  },
  {
  "barcode": "0046716100924",
- "name": "Rico Reeds Alto Sax #2.5",
+ "name": "RJA1025 Alto Sax #2.5",
  "leafs": ["Leaf_Wood","Leaf_Plastic","Leaf_Cardboard"],
  "leafFractions": ["0.1","0.8","0.1"]
  },
@@ -46,5 +46,11 @@
  "name": "Moisturizing Cream for Dry, Sensitive Skin, Fragence Free, Non-comedonic (20 Oz)",
  "leafs": ["Leaf_PlasticContainer"],
  "leafFractions": ["1.0"]
+ },
+ {
+ "barcode": "0071287861783",
+ "name": "up & up? Fresh Scent Antibacterial Moist Wipes 75 ct",
+ "leafs": ["Leaf_PlasticBottle","Leaf_Paper"],
+ "leafFractions": ["0.35","0.65"]
  }
 ]

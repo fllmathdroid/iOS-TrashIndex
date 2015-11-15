@@ -98,11 +98,5 @@
     "barcode": "Leaf_Styrofoam",
     "name": "Styrofoam",
     "months2degrade": "12000000"
-  },
- {
- "barcode": "0071287861783",
- "name": "up & up? Fresh Scent Antibacterial Moist Wipes 75 ct",
- "leafs": ["Leaf_PlasticBottle","Leaf_Paper"],
- "leafFractions": ["0.35","0.65"]
- }
+  }
 ]

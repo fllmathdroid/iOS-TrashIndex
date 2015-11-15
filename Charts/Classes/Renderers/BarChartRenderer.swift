@@ -65,7 +65,9 @@ public class BarChartRenderer: ChartDataRendererBase
         var y: Double
         
         // do the drawing
-        for (var j = 0, count = Int(ceil(CGFloat(dataSet.entryCount) * _animator.phaseX)); j < count; j++)
+        //for (var j = 0, count = Int(ceil(CGFloat(dataSet.entryCount) * _animator.phaseX)); j < count; j++)
+        for (var j = 0, count = Int(floor(CGFloat(dataSet.entryCount) * _animator.phaseX)); j < count; j++)
+
         {
             let e = entries[j]
             
@@ -302,7 +304,7 @@ public class BarChartRenderer: ChartDataRendererBase
                 // if only single values are drawn (sum)
                 if (!dataSet.isStacked)
                 {
-                    for (var j = 0, count = Int(ceil(CGFloat(valuePoints.count) * _animator.phaseX)); j < count; j++)
+                    for (var j = 0, count = Int(floor(CGFloat(valuePoints.count) * _animator.phaseX)); j < count; j++)
                     {
                         if (!viewPortHandler.isInBoundsRight(valuePoints[j].x))
                         {
