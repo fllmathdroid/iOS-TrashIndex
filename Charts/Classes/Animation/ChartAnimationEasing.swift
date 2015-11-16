@@ -31,6 +31,9 @@ public enum ChartEasingOption: Int
     case EaseInQuint
     case EaseOutQuint
     case EaseInOutQuint
+    case EaseInSex
+    case EaseOutSex
+    case EaseInOutSex
     case EaseInSine
     case EaseOutSine
     case EaseInOutSine
@@ -83,6 +86,12 @@ internal func easingFunctionFromOption(easing: ChartEasingOption) -> ChartEasing
         return EasingFunctions.EaseOutQuint
     case .EaseInOutQuint:
         return EasingFunctions.EaseInOutQuint
+    case .EaseInSex:
+        return EasingFunctions.EaseInSex
+    case .EaseOutSex:
+        return EasingFunctions.EaseOutSex
+    case .EaseInOutSex:
+        return EasingFunctions.EaseInOutSex
     case .EaseInSine:
         return EasingFunctions.EaseInSine
     case .EaseOutSine:
@@ -209,6 +218,26 @@ internal struct EasingFunctions
             position -= 2.0
             return 0.5 * (position * position * position * position * position + 2.0)
         }
+    }
+    
+    internal static let EaseInSex = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
+        var position = CGFloat(elapsed / duration)
+        return position * position * position * position * position * position
+    }
+    
+    internal static let EaseOutSex = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
+        var position = CGFloat(elapsed / duration)
+        return -(position * position * position * position * position * position - 1.0)
+    }
+    
+    internal static let EaseInOutSex = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
+        var position = CGFloat(elapsed / duration)
+        if (position < 1.0)
+        {
+            return 0.5 * position * position * position * position * position * position
+        }
+        position -= 2.0
+        return -0.5 * (position * position * position * position * position * position - 2.0)
     }
     
     internal static let EaseInSine = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in

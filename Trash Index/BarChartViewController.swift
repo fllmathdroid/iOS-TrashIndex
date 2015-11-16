@@ -44,10 +44,10 @@ import Charts
         let chartData = BarChartData(xVals: leafs, dataSet: chartDataSet)
         barChartView.data = chartData
         barChartView.descriptionText = ""
-        chartDataSet.colors = ChartColorTemplates.pastel()
+        chartDataSet.colors = ChartColorTemplates.vordiplom()
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInOutElastic)
         barChartView.xAxis.labelPosition = .Bottom
-        barChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
+        barChartView.backgroundColor = UIColor(red: 190/255, green: 179/255, blue: 199/255, alpha: 0.9)
 
     }
 }

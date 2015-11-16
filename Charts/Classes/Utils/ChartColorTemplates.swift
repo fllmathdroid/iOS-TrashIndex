@@ -71,4 +71,26 @@ public class ChartColorTemplates: NSObject
             UIColor(red: 255/255.0, green: 140/255.0, blue: 157/255.0, alpha: 1.0)
         ]
     }
+    
+    public class func natural () -> [UIColor]
+    {
+        return [
+            UIColor(red: 46/255.0, green: 238/255.0, blue: 22/255.0, alpha: 1.0),
+            UIColor(red: 31/255.0, green: 255/255.0, blue: 16/255.0, alpha: 1.0),
+            UIColor(red: 34/255.0, green: 225/255.0, blue: 32/255.0, alpha: 1.0),
+            UIColor(red: 21/255.0, green: 172/255.0, blue: 33/255.0, alpha: 1.0),
+            UIColor(red: 133/255.0, green: 236/255.0, blue: 141/255.0, alpha: 1.0)
+        ]
+    }
+   
+    public class func warm () -> [UIColor]
+    {
+        return [
+            UIColor(red: 255/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0),
+            UIColor(red: 255/255.0, green: 153/255.0, blue: 0/255.0, alpha: 1.0),
+            UIColor(red: 225/255.0, green: 225/255.0, blue: 0/255.0, alpha: 1.0),
+            UIColor(red: 248/255.0, green: 103/255.0, blue: 18/255.0, alpha: 1.0),
+            UIColor(red: 248/255.0, green: 188/255.0, blue: 20/255.0, alpha: 1.0)
+        ]
+    }
 }
