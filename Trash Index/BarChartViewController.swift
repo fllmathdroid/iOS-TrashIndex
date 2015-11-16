@@ -26,10 +26,19 @@ import Charts
             
             leafs.append(originalLeafName)
             leafFractions.append(product!.leafFractions[index]*100.0)
+            
         }
         setChart(leafs, values:leafFractions)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Settings", style: .Plain, target: self, action: "settingButtonPressed:")
     }
-
+    
+    func settingButtonPressed(sender: UIBarButtonItem)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsVC") as! UIViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+       
+    }
     func setChart(dataPoints: [String], values: [Double]) {
         barChartView.noDataText = "You need to provide data for the chart."
         

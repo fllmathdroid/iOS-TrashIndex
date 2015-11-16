@@ -12,7 +12,7 @@
     "leafFractions": ["0.1", "0.01", "0.89"]
   },
   {
-    "barcode": "012546001250",
+    "barcode": "0012546001250",
     "name": "Trident Suger Free Gum",
     "leafs": ["Leaf_PlasticContainer","Leaf_Paper","Leaf_FruitAndNut"],
     "leafFractions": ["0.1", "0.01", "0.89"]
