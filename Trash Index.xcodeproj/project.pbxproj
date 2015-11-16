@@ -30,6 +30,7 @@
 		4859A7F21BF7F0DC005403FA /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4859A7EC1BF7F099005403FA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		486BEA861BE7CB7300112C43 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BEA851BE7CB7300112C43 /* ProductViewController.m */; settings = {ASSET_TAGS = (); }; };
 		486CE0C71BE7C00E00DA6B56 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486CE0C51BE7C00E00DA6B56 /* ScannerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		48C40B191BF97A4B00BAD9C2 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C40B181BF97A4B00BAD9C2 /* SettingsVC.swift */; settings = {ASSET_TAGS = (); }; };
 		48C9E1291BEEC508000AD1BB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E1241BEEC508000AD1BB /* Product.swift */; settings = {ASSET_TAGS = (); }; };
 		48C9E12A1BEEC508000AD1BB /* Leaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E1251BEEC508000AD1BB /* Leaf.swift */; settings = {ASSET_TAGS = (); }; };
 		48C9E12B1BEEC508000AD1BB /* Composites.json in Resources */ = {isa = PBXBuildFile; fileRef = 48C9E1271BEEC508000AD1BB /* Composites.json */; settings = {ASSET_TAGS = (); }; };
@@ -139,6 +140,7 @@
 		486BEA851BE7CB7300112C43 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		486CE0C51BE7C00E00DA6B56 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
 		486CE0C61BE7C00E00DA6B56 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		48C40B181BF97A4B00BAD9C2 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		48C9E1231BEEC508000AD1BB /* Trash Index-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trash Index-Bridging-Header.h"; sourceTree = "<group>"; };
 		48C9E1241BEEC508000AD1BB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		48C9E1251BEEC508000AD1BB /* Leaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaf.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				4859A7E31BF7EFEA005403FA /* BarChartViewController.swift */,
 				48C9E1241BEEC508000AD1BB /* Product.swift */,
 				48C9E1251BEEC508000AD1BB /* Leaf.swift */,
+				48C40B181BF97A4B00BAD9C2 /* SettingsVC.swift */,
 				48C9E1261BEEC508000AD1BB /* assets */,
 				484FC08A1BE9000700BCAA72 /* UIImage-categories */,
 				484FC0871BE8FA1F00BCAA72 /* TopViewCarousel.m */,
@@ -531,6 +534,7 @@
 				48C9E12A1BEEC508000AD1BB /* Leaf.swift in Sources */,
 				486CE0C71BE7C00E00DA6B56 /* ScannerViewController.m in Sources */,
 				484FC0A11BE9000700BCAA72 /* UIImage+Resize.m in Sources */,
+				48C40B191BF97A4B00BAD9C2 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
