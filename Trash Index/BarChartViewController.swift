@@ -11,6 +11,7 @@ import Charts
 
 @objc class BarChartViewController: UIViewController {
     @IBOutlet weak var barChartView: BarChartView!
+    var easeOption:ChartEasingOption = .EaseInOutElastic
     var product:Product?
     var leafs=[String]()
     var leafFractions = [Double]()
@@ -31,11 +32,15 @@ import Charts
         setChart(leafs, values:leafFractions)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Settings", style: .Plain, target: self, action: "settingButtonPressed:")
     }
-    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: self.easeOption)
+    }
     func settingButtonPressed(sender: UIBarButtonItem)
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsVC") as! UIViewController
+        let vc = storyboard.instantiateViewControllerWithIdentifier("SettingsVC") as! SettingsVC
+        vc.chartView = self
         self.navigationController?.pushViewController(vc, animated: true)
        
     }

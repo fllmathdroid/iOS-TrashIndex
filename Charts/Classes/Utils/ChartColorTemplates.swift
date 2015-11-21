@@ -87,10 +87,10 @@ public class ChartColorTemplates: NSObject
     {
         return [
             UIColor(red: 255/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0),
-            UIColor(red: 255/255.0, green: 153/255.0, blue: 0/255.0, alpha: 1.0),
-            UIColor(red: 225/255.0, green: 225/255.0, blue: 0/255.0, alpha: 1.0),
             UIColor(red: 248/255.0, green: 103/255.0, blue: 18/255.0, alpha: 1.0),
-            UIColor(red: 248/255.0, green: 188/255.0, blue: 20/255.0, alpha: 1.0)
+            UIColor(red: 255/255.0, green: 153/255.0, blue: 0/255.0, alpha: 1.0),
+            UIColor(red: 248/255.0, green: 188/255.0, blue: 20/255.0, alpha: 1.0),
+            UIColor(red: 225/255.0, green: 225/255.0, blue: 0/255.0, alpha: 1.0)
         ]
     }
 }

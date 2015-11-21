@@ -228,7 +228,7 @@
                 [self startScanning];
             } else {
                 //[self displayPermissionMissingAlert];
-                [self pushInfoForProduct:@"0796435419035"];
+                [self pushInfoForProduct:@"00796435419035"];
             }
         }];
     }

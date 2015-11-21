@@ -61,6 +61,16 @@ import Foundation
             NSLog("found \(item.barcode) \(item.leafs)")
             return item
         }
+        if barcode.hasPrefix("00") {
+            let startIndex = barcode.startIndex.advancedBy(1)
+            let newbarcode = barcode.substringFromIndex(startIndex)
+            print("new barcode\(newbarcode)")
+            if let item = productsTable[newbarcode] {
+                NSLog("found \(item.barcode) \(item.leafs)")
+                return item
+            }
+            
+        }
         return nil;
     }
 

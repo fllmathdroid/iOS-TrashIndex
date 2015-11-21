@@ -37,6 +37,9 @@ public enum ChartEasingOption: Int
     case EaseInSine
     case EaseOutSine
     case EaseInOutSine
+    case EaseInCosine
+    case EaseOutCosine
+    case EaseInOutCosine
     case EaseInExpo
     case EaseOutExpo
     case EaseInOutExpo
@@ -98,6 +101,12 @@ internal func easingFunctionFromOption(easing: ChartEasingOption) -> ChartEasing
         return EasingFunctions.EaseOutSine
     case .EaseInOutSine:
         return EasingFunctions.EaseInOutSine
+    case .EaseInCosine:
+        return EasingFunctions.EaseInCosine
+    case .EaseOutCosine:
+        return EasingFunctions.EaseOutCosine
+    case .EaseInOutCosine:
+        return EasingFunctions.EaseInOutCosine
     case .EaseInExpo:
         return EasingFunctions.EaseInExpo
     case .EaseOutExpo:
@@ -255,6 +264,21 @@ internal struct EasingFunctions
         return CGFloat( -0.5 * (cos(M_PI * position) - 1.0) )
     }
     
+    internal static let EaseInCosine = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
+        var position: NSTimeInterval = elapsed / duration
+        return CGFloat( -sin(position * M_PI_2) + 1.0)
+    }
+    
+    internal static let EaseOutCosine = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
+        var position: NSTimeInterval = elapsed / duration
+        return CGFloat( cos(position * M_PI_2) )
+    }
+    
+    internal static let EaseInOutCosine = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
+        var position: NSTimeInterval = elapsed / duration
+        return CGFloat( -0.5 * sin(position * M_PI_2) - 1.0)
+    }
+
     internal static let EaseInExpo = { (elapsed: NSTimeInterval, duration: NSTimeInterval) -> CGFloat in
         return (elapsed == 0) ? 0.0 : CGFloat(pow(2.0, 10.0 * (elapsed / duration - 1.0)))
     }
